@@ -1,0 +1,15 @@
+.btn.size {
+   margin-top: 10px;
+    margin-right: 10px;
+    min-width: 100%;
+
+}
+
+.photo-control{
+    min-height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px dashed blue;
+    margin: 5px;
+}
+

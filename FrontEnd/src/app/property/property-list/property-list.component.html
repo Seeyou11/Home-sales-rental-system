@@ -1,0 +1,26 @@
+<div class="container si">
+  <label class="form-label"><strong>Filter City</strong> &nbsp;</label>
+  <input [(ngModel)]="City" />
+  <button type="button" class="btn btn-primary" (click)="onCityFilter()">
+    Search
+  </button>
+  <button type="button" class="btn btn-secondary" (click)="onCityFilterClear()">
+    Clear
+  </button>
+</div>
+
+<!-- <label>Sort by &nbsp;</label>
+<select [(ngModel)]="SortByParam">
+  <option value="City">City</option>
+  <option value="Price">Price</option>
+</select> -->
+
+<div class="row">
+  <!-- 1st propertyw le propertyw card ende input hono yageleglal -->
+  <div
+    *ngFor="let property of properties | filter: SearchCity:'City'"
+    class="col-sm-4 p-3"
+  >
+    <app-property-card [property]="property"></app-property-card>
+  </div>
+</div>
